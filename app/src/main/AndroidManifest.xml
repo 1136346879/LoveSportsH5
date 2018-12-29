@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cmccsi.mhealth.portal.sports"
+    android:versionCode="35"
+    android:versionName="1.1.8" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="16" >
+    </uses-sdk>
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 添加百度地图开发授权 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- 使用定位功能所需权限,demo已集成百度定位SDK,不使用定位功能可去掉以下6项 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+
+    <!-- 监听 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- 添加对屏幕的支持 -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.RUN_INSTRUMENTATION" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:label="Test for my app"
+        android:targetPackage="cmccsi.mhealth.portal.sports" />
+
+    <application
+        android:name="cmccsi.mhealth.portal.sports.basic.MapApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/zyqt_i_shang"
+        android:label="@string/zyqt_app_name"
+        android:persistent="true" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Ge1wD2ve2YrDMQ9Le9WBmIqL" />
+
+        <uses-library android:name="android.test.runner" />
+
+        <!-- gengqi -->
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.MainFragmentActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.MainFragmentActivity2"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.tabhost.TabBaseFragment"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.FragmentContainerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.slidingcontrol.MainCenterActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.PreLoadActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/zyqt_Theme.AppStartLoad" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.PreLoadForgetPwdActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.PreLoadResetPwdActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.calendar.MyCalendarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.UserInfoPreferenceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.HistoryPedometorDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.PreLoadAPKUpdateProgressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.avatar.CropImageActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.SettingAboutActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.SettingTargetStepActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.RankGroupDetailActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.SettingOldPwdActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.SettingNewPwdActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.CampaignContentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.CampaignContentActivity_new"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.FriendPedometerInfoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.WebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.RaceDetialActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.RaceSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.RaceCreateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.SettingDeviceBindActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.RaceInviteActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.SettingTargetWeightActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.SettingWeightActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.SettingNicknameActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.SettingBirthdayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.SettingHeightActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.MapSelectTRunType"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.HistoryECGDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.HRActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.HRVActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.MoodActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.ecg.activity.HistoryECGDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.ecg.activity.ECGDetailChartActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.RankingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+
+        <service android:name="cmccsi.mhealth.portal.sports.service.StepService_GPS" >
+            <intent-filter>
+                <action android:name="cmcc.mhealth.portal.sports.service.StepService_GPS" />
+
+                <data android:port="1000" />
+            </intent-filter>
+        </service>
+
+        <!-- baiduMap -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        <service
+            android:name="cmccsi.mhealth.portal.sports.device.DeviceManagerService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cmccsi.mhealth.portal.sports.device.DeviceManagerService" />
+
+                <data android:port="1000" />
+            </intent-filter>
+        </service>
+        <service android:name="cmccsi.mhealth.portal.sports.service.ProtectionService" >
+        </service>
+
+        
+        <!-- android:value="4fed4c3b5270154852000002" > -->
+        <!-- 51593caf56240bb72403b5b3 -->
+        <!-- ishang:5166551056240ba82b001d3c -->
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="false" />
+
+        <service
+            android:name="cmccsi.mhealth.portal.sports.service.StepService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cmcc.mhealth.portal.sports.service.StepService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.PedometorActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.pedo.PedometerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.ecg.activity.DeviceSettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.ecg.activity.DeviceSettingActivityTest"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.ecg.activity.BraceletSettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/zyqt_AiTheme.Light" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.ecg.activity.DeviceBindingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.SettingArea"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.cmcc.bracelet.lsjx.libs.DingdangSettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <!-- 1111111111111111111111111111111111111 -->
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.pedo.PedometerActivityTest"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+
+        <receiver
+            android:name="cmccsi.mhealth.portal.sports.basic.SendMsgBroadCast"
+            android:label="@string/zyqt_app_name" >
+        </receiver>
+
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.MatchContactActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.activity.HandAddContactActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+
+        <receiver android:name="cmccsi.mhealth.portal.sports.broadcast.BootCompletedReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.appversion.AddDeviceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <!-- ******************************************************* -->
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.appversion.PreLoadLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.appversion.RegisteActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.appversion.HistorySportActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cmccsi.mhealth.portal.sports.pedo.SharePagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="zyqt_linearlayout_null"></item>
+    <item type="id" name="zyqt_textview_null"></item>
+    <item type="id" name="zyqt_iamgeview_null"></item>
+    
+    <item type="id" name="zyqt_edittext_input_your_height"/><!-- 身高输入框 -->
+    <item type="id" name="zyqt_button_set_height"/><!-- 身高输入框 -->
+    
+     <item type="id" name="zyqt_edittext_input_your_weight"/><!-- 体重目标输入框-->
+    <item type="id" name="zyqt_button_set_weight"/><!-- 体重设置按钮 -->
+    
+    <!-- Just adding these so I wont have to remove a lot of code from NumberPicker.java. -->
+    <item name="zyqt_np_increment" type="id" />
+    <item name="zyqt_np_decrement" type="id" />
+</resources>

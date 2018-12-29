@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null" >
+
+    <LinearLayout
+        android:id="@+id/linear_tom"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/zyqt_background"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/zyqt_margin_left_1"
+            android:paddingTop="@dimen/zyqt_margin_top_as_bom"
+            android:text="分享到"
+            android:textColor="@color/zyqt_gold_1"
+            android:textSize="@dimen/zyqt_size_1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/textview_weixin_friends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp" >
+
+                <ImageView
+                    android:id="@id/zyqt_iamgeview_null"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/zyqt_weixin_hy" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/zyqt_iamgeview_null"
+                    android:gravity="center"
+                    android:text="@string/zyqt_textview_friend_weixin"
+                    android:textColor="@color/zyqt_gold_1"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/textview_weixin_quan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp" >
+
+                <ImageView
+                    android:id="@id/zyqt_iamgeview_null"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/zyqt_weixin_pyq" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/zyqt_iamgeview_null"
+                    android:gravity="center"
+                    android:text="@string/zyqt_textview_circle_friend_weixin"
+                    android:textColor="@color/zyqt_gold_1"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textview_share_cancel"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dip"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/zyqt_cancel_button"
+            android:gravity="center"
+            android:text="@string/zyqt_text_share_cancel"
+            android:textColor="@color/zyqt_white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_null"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/linear_tom"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</RelativeLayout>

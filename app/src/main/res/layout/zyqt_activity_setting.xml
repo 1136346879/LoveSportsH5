@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/zyqt_sample_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/zyqt_title_menu" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/setting_face"
+                style="@style/zyqt_setting_item"
+                android:layout_height="80dp"
+                android:background="@drawable/zyqt_listitem_round_up"
+                android:clickable="false"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/setting_face_image"
+                    style="@style/zyqt_ListItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:clickable="false"
+                    android:duplicateParentState="true"
+                    android:text="@string/zyqt_face_image" />
+
+                <cmccsi.mhealth.portal.sports.view.RoundAngleImageView
+                    android:id="@+id/imageview_avatar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/zyqt_noavatar_middle"
+                    android:visibility="visible"
+                    app:roundHeight="10.0dip"
+                    app:roundWidth="10.0dip" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    style="@style/zyqt_rank_setting_more"
+                    android:contentDescription="@string/zyqt_image_content_description"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:contentDescription="@string/zyqt_image_content_description"
+                android:src="@drawable/zyqt_setting_view_line"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/setting_nickname"
+                style="@style/zyqt_setting_item_and"
+                android:layout_height="40dp"
+                android:background="@drawable/zyqt_listitem_round_up"
+                android:clickable="false"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/nickname_textview"
+                    style="@style/zyqt_ListItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:duplicateParentState="true"
+                    android:text="@string/zyqt_nickname" />
+
+                <ImageView
+                    style="@style/zyqt_rank_setting_more"
+                    android:contentDescription="@string/zyqt_image_content_description"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:contentDescription="@string/zyqt_image_content_description"
+                android:src="@drawable/zyqt_setting_view_line"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/setting_phonenum"
+                style="@style/zyqt_setting_item_notclick"
+                android:background="@drawable/zyqt_listitem_round_up" >
+
+                <TextView
+                    android:id="@+id/setting_phone_num"
+                    style="@style/zyqt_ListItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:clickable="false"
+                    android:duplicateParentState="true"
+                    android:text="@string/zyqt_telephonenumber" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:contentDescription="@string/zyqt_image_content_description"
+                android:src="@drawable/zyqt_setting_view_line" />
+
+            <RelativeLayout
+                android:id="@+id/setting_weight"
+                style="@style/zyqt_setting_item_notclick"
+                android:background="@drawable/zyqt_listitem_round_center"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/setting_myweight"
+                    style="@style/zyqt_ListItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:duplicateParentState="true"
+                    android:text="@string/zyqt_textview_weight" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:contentDescription="@string/zyqt_image_content_description"
+                android:src="@drawable/zyqt_setting_view_line"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/setting_steplong"
+                style="@style/zyqt_setting_item_notclick"
+                android:background="@drawable/zyqt_listitem_round_center"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/setting_mysteplong"
+                    style="@style/zyqt_ListItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:duplicateParentState="true"
+                    android:text="@string/zyqt_textview_steplong" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:contentDescription="@string/zyqt_image_content_description"
+                android:src="@drawable/zyqt_setting_view_line"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                style="@style/zyqt_setting_item_notclick"
+                android:background="@drawable/zyqt_listitem_round_center" >
+
+                <TextView
+                    android:id="@+id/setting_my_groupname"
+                    style="@style/zyqt_ListItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:duplicateParentState="true"
+                    android:text="@string/zyqt_textview_mygroup" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:contentDescription="@string/zyqt_image_content_description"
+                android:src="@drawable/zyqt_setting_view_line" />
+
+            <RelativeLayout
+                android:id="@+id/setting_area"
+                style="@style/zyqt_setting_item_and"
+                android:layout_height="40dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/zyqt_listitem_round_bottom" >
+
+                <TextView
+                    android:id="@+id/textview_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:duplicateParentState="true"
+                    android:text="所属区域:"
+                    android:textColor="#35ACE1"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_area_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_toRightOf="@+id/textview_area"
+                    android:duplicateParentState="true"
+                    android:text="(请选择您的地域组织信息，加入后可查看所在区域的排行榜)" />
+
+                <ImageView
+                    style="@style/zyqt_rank_setting_more"
+                    android:contentDescription="@string/zyqt_image_content_description"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:contentDescription="@string/zyqt_image_content_description"
+                android:src="@drawable/zyqt_setting_view_line"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/setting_birthday"
+                style="@style/zyqt_setting_item_and"
+                android:layout_height="40dp"
+                android:layout_marginTop="0dp"
+                android:background="#ffffff"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/textview_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:duplicateParentState="true"
+                    android:text="@string/zyqt_string_birthday"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    style="@style/zyqt_rank_setting_more"
+                    android:contentDescription="@string/zyqt_image_content_description"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:contentDescription="@string/zyqt_image_content_description"
+                android:src="@drawable/zyqt_setting_view_line"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/setting_height"
+                style="@style/zyqt_setting_item_and"
+                android:layout_height="40dp"
+                android:layout_marginTop="0dp"
+                android:background="#ffffff"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/height_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:duplicateParentState="true"
+                    android:text="@string/zyqt_text_height"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    style="@style/zyqt_rank_setting_more"
+                    android:contentDescription="@string/zyqt_image_content_description"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:contentDescription="@string/zyqt_image_content_description"
+                android:src="@drawable/zyqt_setting_view_line"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/setting_weight_1"
+                style="@style/zyqt_setting_item_and"
+                android:layout_height="40dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/zyqt_listitem_round_bottom_normal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/textview_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:duplicateParentState="true"
+                    android:text="@string/zyqt_string_weight"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    style="@style/zyqt_rank_setting_more"
+                    android:contentDescription="@string/zyqt_image_content_description"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_aboutIS"
+                style="@style/zyqt_setting_item"
+                android:layout_height="40dp"
+                android:background="@drawable/zyqt_listitem_round_up"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_ishang"
+                    style="@style/zyqt_ListItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:duplicateParentState="true"
+                    android:text="@string/zyqt_textview_aboutapk" />
+
+                <ImageView
+                    style="@style/zyqt_rank_setting_more"
+                    android:contentDescription="@string/zyqt_image_content_description" />
+            </RelativeLayout>
+            <!-- 新手导引 -->
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:contentDescription="@string/zyqt_image_content_description"
+                android:src="@drawable/zyqt_setting_view_line"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/setting_guid"
+                style="@style/zyqt_setting_item_and"
+                android:layout_height="40dp"
+                android:background="@drawable/zyqt_listitem_round_center"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/setting_guiddescrip"
+                    style="@style/zyqt_ListItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:duplicateParentState="true"
+                    android:text="@string/zyqt_textview_guid" />
+
+                <ImageView
+                    style="@style/zyqt_rank_setting_more"
+                    android:contentDescription="@string/zyqt_image_content_description" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_bracelet_setting"
+                style="@style/zyqt_setting_item_and"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/zyqt_listitem_round_up" >
+
+                <TextView
+                    style="@style/zyqt_ListItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dip"
+                    android:clickable="false"
+                    android:duplicateParentState="true"
+                    android:text="@string/zyqt_bracelet_setting" />
+
+                <ImageView
+                    style="@style/zyqt_rank_setting_more"
+                    android:contentDescription="@string/zyqt_image_content_description"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_step_switch"
+                style="@style/zyqt_setting_item_notclick"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/zyqt_listitem_round_up_bottom" >
+
+                <TextView
+                    style="@style/zyqt_ListItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dip"
+                    android:clickable="false"
+                    android:duplicateParentState="true"
+                    android:text="计步开关：" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/sw_startStep"
+                    android:text="关"
+                    android:textColor="@color/zyqt_black" />
+
+                <cmccsi.mhealth.portal.sports.view.WiperSwitch
+                    android:id="@+id/sw_startStep"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_step_off" />
+
+                <TextView
+                    android:id="@+id/tv_step_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="开"
+                    android:textColor="@color/zyqt_black" />
+            </RelativeLayout>
+            <!-- 检查更新 -->
+
+            <RelativeLayout
+                android:id="@+id/setting_sport_target"
+                style="@style/zyqt_setting_item_and"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/zyqt_listitem_round_up" >
+
+                <TextView
+                    android:id="@+id/tv_sport_target"
+                    style="@style/zyqt_ListItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:clickable="false"
+                    android:duplicateParentState="true"
+                    android:text="@string/zyqt_textview_runtarget" />
+
+                <TextView
+                    android:id="@+id/setting_sport_target_num"
+                    style="@style/zyqt_ListItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/tv_sport_target"
+                    android:clickable="false"
+                    android:duplicateParentState="true"
+                    android:text="@string/zyqt_text_zeronum" />
+
+                <ImageView
+                    style="@style/zyqt_rank_setting_more"
+                    android:contentDescription="@string/zyqt_image_content_description" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:contentDescription="@string/zyqt_image_content_description"
+                android:src="@drawable/zyqt_setting_view_line" />
+
+            <RelativeLayout
+                android:id="@+id/setting_target_weight"
+                style="@style/zyqt_setting_item_and"
+                android:layout_height="40dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/zyqt_listitem_round_bottom" >
+
+                <TextView
+                    android:id="@+id/targetWeight_textview"
+                    style="@style/zyqt_ListItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:duplicateParentState="true"
+                    android:text="@string/zyqt_text_target_weight" />
+
+                <ImageView
+                    style="@style/zyqt_rank_setting_more"
+                    android:contentDescription="@string/zyqt_image_content_description" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_update"
+                style="@style/zyqt_setting_item"
+                android:layout_height="40dp"
+                android:background="@drawable/zyqt_listitem_round_up"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/setting_version"
+                    style="@style/zyqt_ListItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:duplicateParentState="true"
+                    android:text="@string/zyqt_textview_inspect_version" />
+
+                <TextView
+                    android:id="@+id/tv_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_toRightOf="@id/setting_version"
+                    android:duplicateParentState="true"
+                    android:text="@string/zyqt_textview_version" />
+
+                <ImageView
+                    style="@style/zyqt_rank_setting_more"
+                    android:contentDescription="@string/zyqt_image_content_description" />
+            </RelativeLayout>
+
+            <!-- 设置密码 -->
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:contentDescription="@string/zyqt_image_content_description"
+                android:src="@drawable/zyqt_setting_view_line"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rlayout_setting_updatepwd"
+                style="@style/zyqt_setting_item_and"
+                android:layout_height="40dp"
+                android:background="@drawable/zyqt_listitem_round_center"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/setting_updatepwd"
+                    style="@style/zyqt_ListItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:duplicateParentState="true"
+                    android:text="@string/zyqt_textview_update_password" />
+
+                <ImageView
+                    style="@style/zyqt_rank_setting_more"
+                    android:contentDescription="@string/zyqt_image_content_description" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:contentDescription="@string/zyqt_image_content_description"
+                android:src="@drawable/zyqt_setting_view_line"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rlayout_setting_help"
+                style="@style/zyqt_setting_item_and"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/zyqt_listitem_round_up"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/zyqt_ListItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:duplicateParentState="true"
+                    android:text="@string/zyqt_textview_help" />
+
+                <ImageView
+                    style="@style/zyqt_rank_setting_more"
+                    android:contentDescription="@string/zyqt_image_content_description" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:contentDescription="@string/zyqt_image_content_description"
+                android:src="@drawable/zyqt_setting_view_line"
+                android:visibility="gone" />
+
+            <!-- 绑定设备隐藏 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_setting_clear"
+                style="@style/zyqt_setting_item_and"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/zyqt_listitem_round_up" >
+
+                <TextView
+                    style="@style/zyqt_ListItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:duplicateParentState="true"
+                    android:text="清除缓存" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:contentDescription="@string/zyqt_image_content_description"
+                android:src="@drawable/zyqt_setting_view_line" />
+
+            <RelativeLayout
+                android:id="@+id/rlayout_setting_device"
+                style="@style/zyqt_setting_item_and"
+                android:layout_height="40dp"
+                android:background="@drawable/zyqt_listitem_round_center" >
+
+                <TextView
+                    style="@style/zyqt_ListItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:duplicateParentState="true"
+                    android:text="@string/zyqt_textview_binddevice" />
+
+                <ImageView
+                    style="@style/zyqt_rank_setting_more"
+                    android:contentDescription="@string/zyqt_image_content_description" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:contentDescription="@string/zyqt_image_content_description"
+                android:src="@drawable/zyqt_setting_view_line" />
+
+            <RelativeLayout
+                android:id="@+id/rlayout_setting_boot_run"
+                style="@style/zyqt_setting_item_and"
+                android:layout_height="40dp"
+                android:background="@drawable/zyqt_listitem_round_bottom" >
+
+                <TextView
+                    style="@style/zyqt_ListItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dip"
+                    android:clickable="false"
+                    android:duplicateParentState="true"
+                    android:text="@string/zyqt_textview_boot_run" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/sw_setting_boot_run"
+                    android:text="关"
+                    android:textColor="@color/zyqt_black" />
+
+                <cmccsi.mhealth.portal.sports.view.WiperSwitch
+                    android:id="@+id/sw_setting_boot_run"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_setting_boot_run_off" />
+
+                <TextView
+                    android:id="@+id/tv_setting_boot_run_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="开"
+                    android:textColor="@color/zyqt_black" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:contentDescription="@string/zyqt_image_content_description"
+                android:src="@drawable/zyqt_setting_view_line"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/setting_feedback"
+                style="@style/zyqt_setting_item"
+                android:layout_height="40dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/zyqt_listitem_round_center"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/zyqt_ListItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:duplicateParentState="true"
+                    android:text="@string/zyqt_textview_feedback" />
+
+                <ImageView
+                    style="@style/zyqt_rank_setting_more"
+                    android:contentDescription="@string/zyqt_image_content_description" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:visibility="gone"
+                android:layout_marginRight="20.0dip"
+                android:contentDescription="@string/zyqt_image_content_description"
+                android:src="@drawable/zyqt_setting_view_line" />
+
+            <RelativeLayout
+                android:id="@+id/setting_problem"
+                style="@style/zyqt_setting_item"
+                android:visibility="gone"
+                android:layout_height="40dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/zyqt_listitem_round_bottom" >
+
+                <TextView
+                    style="@style/zyqt_ListItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:duplicateParentState="true"
+                    android:text="常见问题" />
+
+                <ImageView
+                    style="@style/zyqt_rank_setting_more"
+                    android:contentDescription="@string/zyqt_image_content_description" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_exit"
+                style="@style/zyqt_setting_item_and"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/zyqt_listitem_round"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/zyqt_ListItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:clickable="false"
+                    android:duplicateParentState="true"
+                    android:text="退出"
+                    android:textColor="#ffffffff" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

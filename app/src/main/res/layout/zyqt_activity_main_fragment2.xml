@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zyqt_white" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/zyqt_title_menu" />
+
+    <ImageView
+        android:id="@+id/iv_showGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:scaleType="centerCrop"
+        android:src="@drawable/zyqt_tab_main" />
+
+    <cmccsi.mhealth.portal.sports.view.HorizontalMarqueeTextView
+        android:id="@+id/tv_showGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_showGoal"
+        android:background="#aa000000"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:text="@string/zyqt_hello_world"
+        android:textColor="@color/zyqt_white"
+        android:textSize="20sp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_showGoal" />
+
+    <LinearLayout
+        android:id="@+id/ll_tab_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/tv_showGoal"
+        android:layout_weight="0.0"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <RadioGroup
+            android:id="@+id/main_tab_group"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/zyqt_tab_bt"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingTop="2.0dip" >
+
+            <RadioButton
+                android:id="@+id/main_tab_health"
+                style="@style/zyqt_radioButtonStyle"
+                android:checked="true"
+                android:drawableTop="@drawable/zyqt_tab_health"
+                android:text="运动空间" />
+
+            <RadioButton
+                android:id="@+id/main_tab_corporation"
+                style="@style/zyqt_radioButtonStyle"
+                android:drawableTop="@drawable/zyqt_tab_corporation"
+                android:text="排行榜" />
+
+            <RadioButton
+                android:id="@+id/main_tab_play"
+                style="@style/zyqt_radioButtonStyle"
+                android:drawableTop="@drawable/zyqt_tab_play"
+                android:text="我的运动圈" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:scaleType="fitXY"
+        android:src="@drawable/zyqt_main_activity_button_img" />
+
+</RelativeLayout>

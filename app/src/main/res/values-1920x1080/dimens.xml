@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <dimen name="zyqt_achartengine_height">300dp</dimen><!-- 图表控件高度 -->
+    
+   	<dimen name="zyqt_menu_name_size">22sp</dimen><!--menu 名字的字体大小  -->
+   	<dimen name="menu_name_margin_left">8dip</dimen><!--menu 名字的字体大小  -->
+   	<dimen name="zyqt_weight_acharview_height">270dp</dimen><!--体重控件的高度  -->
+   	
+   	<dimen name="zyqt_text_size_running_date">40sp</dimen>
+   	<dimen name="zyqt_height_running_center">80dp</dimen><!--正在运动界面的中心圆高度  -->
+   	
+   	<dimen name="zyqt_map_list_width_blue">270dp</dimen><!--\ -->
+   	<dimen name="zyqt_map_list_height_blue">100dp</dimen><!--\ -->
+</resources>
