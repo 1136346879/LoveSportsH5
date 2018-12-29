@@ -89,25 +89,25 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 23 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\minedemo\workspace_as\Sport_androidstudio_h5\app\libs\httpcore-4.1.4.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\minedemo\workspace_as\Sport_androidstudio_h5\app\libs\xUtils-2.6.14.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\minedemo\workspace_as\Sport_androidstudio_h5\app\libs\gson-2.2.3.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\minedemo\workspace_as\Sport_androidstudio_h5\app\libs\xcl-charts.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\minedemo\workspace_as\Sport_androidstudio_h5\app\libs\locSDK_6.05.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\minedemo\workspace_as\Sport_androidstudio_h5\app\libs\android-support-v4.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\minedemo\workspace_as\Sport_androidstudio_h5\app\libs\activation.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\minedemo\workspace_as\Sport_androidstudio_h5\app\libs\additionnal.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\minedemo\workspace_as\Sport_androidstudio_h5\app\libs\commons-codec-1.8.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\minedemo\workspace_as\Sport_androidstudio_h5\app\libs\mail.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\minedemo\workspace_as\Sport_androidstudio_h5\app\libs\libammsdk.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\minedemo\workspace_as\Sport_androidstudio_h5\app\libs\baidumapapi_v3_5_0.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\minedemo\workspace_as\Sport_androidstudio_h5\app\libs\httpclient-4.1.3.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\minedemo\workspace_as\Sport_androidstudio_h5\app\libs\commons-lang-2.2.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\minedemo\workspace_as\Sport_androidstudio_h5\app\libs\libTGbleManager.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\minedemo\workspace_as\Sport_androidstudio_h5\app\libs\iShang_lib_ecg.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\minedemo\workspace_as\Sport_androidstudio_h5\app\libs\libdingdangota.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\minedemo\workspace_as\Sport_androidstudio_h5\app\libs\achartengine-1.1.0.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\minedemo\workspace_as\Sport_androidstudio_h5\app\libs\libTGEKG.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\minedemo\workspace_as\Sport_androidstudio_h5\app\libs\fastjson-1.1.33.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\gitDemo\sportlove\lovesportsH5\app\libs\mail.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\gitDemo\sportlove\lovesportsH5\app\libs\libammsdk.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\gitDemo\sportlove\lovesportsH5\app\libs\additionnal.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\gitDemo\sportlove\lovesportsH5\app\libs\locSDK_6.05.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\gitDemo\sportlove\lovesportsH5\app\libs\activation.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\gitDemo\sportlove\lovesportsH5\app\libs\fastjson-1.1.33.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\gitDemo\sportlove\lovesportsH5\app\libs\libTGEKG.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\gitDemo\sportlove\lovesportsH5\app\libs\xcl-charts.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\gitDemo\sportlove\lovesportsH5\app\libs\achartengine-1.1.0.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\gitDemo\sportlove\lovesportsH5\app\libs\commons-lang-2.2.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\gitDemo\sportlove\lovesportsH5\app\libs\libTGbleManager.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\gitDemo\sportlove\lovesportsH5\app\libs\libdingdangota.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\gitDemo\sportlove\lovesportsH5\app\libs\xUtils-2.6.14.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\gitDemo\sportlove\lovesportsH5\app\libs\gson-2.2.3.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\gitDemo\sportlove\lovesportsH5\app\libs\httpclient-4.1.3.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\gitDemo\sportlove\lovesportsH5\app\libs\iShang_lib_ecg.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\gitDemo\sportlove\lovesportsH5\app\libs\commons-codec-1.8.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\gitDemo\sportlove\lovesportsH5\app\libs\httpcore-4.1.4.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\gitDemo\sportlove\lovesportsH5\app\libs\baidumapapi_v3_5_0.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_aars__:F.\gitDemo\sportlove\lovesportsH5\app\libs\android-support-v4.jar:unspecified@jar" level="project" />
   </component>
 </module>

@@ -33,6 +33,8 @@ import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ImageView.ScaleType;
+
+import cmccsi.mhealth.portal.sports.R;
 import cmccsi.mhealth.portal.sports.appversion.MResource;
 import cmccsi.mhealth.portal.sports.appversion.PreLoadLoginActivity;
 import cmccsi.mhealth.portal.sports.basic.BaseActivity;
@@ -147,8 +149,12 @@ public class PreLoadActivity extends BaseActivity {
 			mHandler.postDelayed(new Runnable() {
 				@Override
 				public void run() {
-					Intent intent = new Intent(PreLoadActivity.this, PreLoadLoginActivity.class);
+//					Intent intent = new Intent(PreLoadActivity.this, PreLoadLoginActivity.class);
+//					startActivity(intent);
+					Intent	intent = new Intent();
+					intent.setClass(PreLoadActivity.this, PedometerActivity.class);
 					startActivity(intent);
+//					overridePendingTransition(R.anim.slide_in_right, R.anim.silde_out_left);
 					finish();
 				}
 			}, 1500);
@@ -423,7 +429,10 @@ public class PreLoadActivity extends BaseActivity {
 				mHandler.postDelayed(new Runnable() {
 					@Override
 					public void run() {
-						Intent intent = new Intent(PreLoadActivity.this, PreLoadLoginActivity.class);
+						//					Intent intent = new Intent(PreLoadActivity.this, PreLoadLoginActivity.class);
+//					startActivity(intent);
+						Intent	intent = new Intent();
+						intent.setClass(PreLoadActivity.this, PedometerActivity.class);
 						startActivity(intent);
 						finish();
 					}
